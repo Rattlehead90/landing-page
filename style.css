@@ -28,7 +28,8 @@ a {
 }
 
 .header, 
-.main {
+.main, 
+.footer {
     background-color: #1f2937;
 }
 
@@ -38,12 +39,20 @@ a {
     justify-content: space-around;
     padding: 15px;
     width: 100%;
-    padding-bottom: 130px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #E5E7EB
+
 }
 
 .hero {
     display: flex;
     justify-content: center;
+    padding: 130px;
 }
 
 
@@ -51,13 +60,16 @@ h1 {
     color: #f9faf8;
     font-size: 48px;
     font-weight: 900;
-    width: 500px;
+    max-width: 470px;
+    margin: 0;
 }
 
 
 .hero-text > p {
     color: #E5E7EB;
-    width: 500px;
+    max-width: 470px;
+    margin-top: 5px;
+    margin-bottom: 20px;
 }
 
 .links > ul {
@@ -69,10 +81,10 @@ h1 {
 }
 
 .hero-image {
-    width: 700px;
+    max-width: 700px;
     height: auto;
+    margin-left: 30px;
 }
-
 
 button {
     padding: 10px 16px;
@@ -83,3 +95,34 @@ button {
     font-weight: bold;
     font-size: 16px;
 }   
+
+.information {
+    background-color: #F9FAF8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 70px;
+}
+
+.information-title {
+    color: #1f2937;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 35px;  
+}
+
+.information-container {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+    gap: 150px;
+}
+
+.card {
+    flex: 1;
+    text-align: center;
+    max-width: 300px;
+
+}
+
